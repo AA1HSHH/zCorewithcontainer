@@ -21,6 +21,6 @@
 
 |日期|做了什么|
 |--|--|
-|0806|1.阅读[自己动手写Docker](https://weread.qq.com/web/reader/a8932240721e42b5a89f479kc81322c012c81e728d9d180)和[Docker进阶与实战](https://weread.qq.com/web/reader/89c324e05c428889cbf40e9kc81322c012c81e728d9d180)容器基本原理部分<br/>2.|
-|||
+|0806|1.阅读[自己动手写Docker](https://weread.qq.com/web/reader/a8932240721e42b5a89f479kc81322c012c81e728d9d180)和[Docker进阶与实战](https://weread.qq.com/web/reader/89c324e05c428889cbf40e9kc81322c012c81e728d9d180)容器基本原理部分|
+|0808|1.阅读许中兴博士Fuchsia介绍，了解到原生进程沙箱等，在碎碎念可见<br/>2.参加文档组组会，可以通过linux-object操作文件，通过zircon-object来实现管理操作|
 
