@@ -30,7 +30,7 @@ git clone https://github.com.cnpmjs.org/rcore-os/zCore --recursive cd zCore
 在助教Deathwish42帮助下将目录zCore/rboot.conf下的info改为warn
 
 
-```
+```diff
 
 -cmdline=LOG=info:TERM=xterm-256color:console.shell=true:virtcon.disable=true
 
@@ -38,9 +38,6 @@ git clone https://github.com.cnpmjs.org/rcore-os/zCore --recursive cd zCore
 
 ```
 
-<table><tr><td bgcolor=#C0FF3E>背景色的设置是按照十六进制颜色值：#C0FF3E</td></tr></table>
-
-<table><tr><td bgcolor=yellow>背景色yellow</td></tr></table>
 
 
 ## 5.启用kvm加速
