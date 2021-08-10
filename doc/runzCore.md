@@ -40,6 +40,9 @@ git clone https://github.com.cnpmjs.org/rcore-os/zCore --recursive cd zCore
 
 <table><tr><td bgcolor=#C0FF3E>背景色的设置是按照十六进制颜色值：#C0FF3E</td></tr></table>
 
+<table><tr><td bgcolor=yellow>背景色yellow</td></tr></table>
+
+
 ## 5.启用kvm加速
 
 运行`make run accel=1`
