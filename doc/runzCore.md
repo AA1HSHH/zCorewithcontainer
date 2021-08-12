@@ -44,9 +44,17 @@ git clone https://github.com.cnpmjs.org/rcore-os/zCore --recursive cd zCore
 
 运行`make run accel=1`
 
-遇到报错failed to initialize kvm: Permission denied
+### 遇到报错failed to initialize kvm: Permission denied
 
 直接`sudo chmod 666 /dev/kvm`再次make run 就行
+
+### 我还遇到了报错qemu-system-x86_64: error: failed to set msr 0x48f to 0x7fffff00036dfb qemu-system-x86_64: ../../target/i386/kvm.c:2701: kvm_buf_set_msrs: assertion `ret == cpu->kvm_msr_buf->nmsrs' failed.
+
+参考[这一篇](https://github.com/minishift/minishift/issues/3210)
+
+打开了VMware的虚拟化CPU性能计数器
+
+![image-20210810094329842](runzCore.assets/image-20210810094329842.png)
 
 ## 6.运行之后即可看到shell
 
