@@ -1,0 +1,7 @@
+Log of fsck -C -a -T -t ext4 /dev/sda3 
+Tue Aug 24 15:15:46 2021
+
+/dev/sda3: clean, 457296/2588672 files, 5538426/10353664 blocks
+
+Tue Aug 24 15:15:46 2021
+----------------

@@ -1,5 +1,6 @@
 # zCorewithcontainer
 
+[代码](./)
 ## 路线
 1.从linux走，实现cgroups以及namespaces
 
@@ -24,6 +25,10 @@
 |0806|1.阅读[自己动手写Docker](https://weread.qq.com/web/reader/a8932240721e42b5a89f479kc81322c012c81e728d9d180)和[Docker进阶与实战](https://weread.qq.com/web/reader/89c324e05c428889cbf40e9kc81322c012c81e728d9d180)容器基本原理部分|
 |0808|1.阅读许中兴博士Fuchsia介绍，了解到原生进程沙箱等，在碎碎念可见<br/>2.参加文档组组会，可以通过linux-object操作文件，通过zircon-object来实现管理操作|
 |0809|1.听王润基学长交流。具体感受就是，脚踏实地仰望星空。<br/>2.在助教的帮助下运行zCore|
-|0812|1.重点实现libcontainer && aufs这一部分的东西<br/>2. 这几天手头稍微有点忙，下周开始每天可以投入更多的时间参与开发|
-|||
+|0812|1.重点实现libcontainer && aufs这一部分的东西<br/>2. 这几天手头稍微有点忙，下周开始每天可以投入更多的时间参与开发<br/>3. 了解了一些Rust社区的进展|
+|0816|linux下的参考资料比较多，先在ubuntu上搞。后边移植过来。
+容器这些主要用Go语言，在ubuntu上先做到可以Rust切换根目录这件事。|
+|0820|运行了Ubuntu上的简易容器，隔离了进程，没隔离文件|
+|0823|修BUG，尝试移植|
+
 
