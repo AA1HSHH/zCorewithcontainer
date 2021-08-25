@@ -1,6 +1,6 @@
 # zCorewithcontainer
 
-[代码](./)
+[代码](./trydocker/)
 ## 路线
 1.从linux走，实现cgroups以及namespaces
 
@@ -30,5 +30,4 @@
 容器这些主要用Go语言，在ubuntu上先做到可以Rust切换根目录这件事。|
 |0820|运行了Ubuntu上的简易容器，隔离了进程，没隔离文件|
 |0823|修BUG，尝试移植|
-
 

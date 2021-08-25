@@ -36,6 +36,7 @@ func run() {
     cmd.Stderr = os.Stderr
 	cmd.SysProcAttr = &syscall.SysProcAttr{
         Cloneflags:   syscall.CLONE_NEWUTS | syscall.CLONE_NEWPID | syscall.CLONE_NEWNS,
+        Unshareflags: syscall.CLONE_NEWNS,
     }
     // This is where we run the command
     err := cmd.Run()
@@ -60,7 +61,8 @@ func child() {
 		panic(fmt.Sprintf("sethostname: %v\n", err))
 	}
 	// //Change the root directory
-	err = syscall.Chroot("./alpine")
+    err = syscall.Chdir("../alpine")
+	err = syscall.Chroot("/")
     if err != nil {
 		panic(fmt.Sprintf("chroot: %v\n", err))
 	}
@@ -70,17 +72,16 @@ func child() {
 	if err != nil {
 		panic(fmt.Sprintf("chdir: %v\n", err))
 	}
+    
 	//Mount the proc pseudo-filesystem
-    // This is where we run the command
-
-    err = syscall.Mount("proc", "/proc", "proc", 0, "")
+    err = syscall.Mount("proc", "proc", "proc", 0, "")
     if err != nil {
         panic(fmt.Sprintf("mout: %v\n", err))
       }
-    //cmd.Dir = "/root/trydocker/alpine"
+    
     err = cmd.Run()
     if err != nil {
-      syscall.Unmount("/proc",0)
+      syscall.Unmount("proc",0)
       panic(fmt.Sprintf("running: %v\n", err))
     }
     
