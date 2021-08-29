@@ -18,7 +18,7 @@
 
 ## 结果
 
-Go语言初步实现了文件隔离，进程隔离
+Ubuntu上Go语言初步实现了文件隔离，进程隔离
 
 [代码](../trydocker/)
 
@@ -26,12 +26,16 @@ Go语言初步实现了文件隔离，进程隔离
 
 对操作系统有实践层面的理解
 
-新时代的C语言*Rust*算是入门了
-
 尽早动手写代码，少纸上谈兵
 
 ## 想法
 
-Linux 内核   namespace + cgroup
+1 Go到Rust
 
-Zircon 内核   进程隔离jobs   文件隔离namespace
+2 Ubuntu到zCore（linux ，zircon）
+
+
+
+Linux 内核   namespace  cgroup
+
+Zircon 内核   进程隔离jobs   
