@@ -1,6 +1,16 @@
 # zCorewithcontainer
 
 [代码](./trydocker/)
+
+# 现状
+Go/Rust已经可以在Ubuntu上运行，可实现文件&&进程隔离
+
+TODO:
+- [x] Go移植到Rust
+- [ ] 文档&&总结
+- [ ] 更新图片
+
+# 规划
 ## 路线
 1.从linux走，实现cgroups以及namespaces
 
@@ -18,7 +28,7 @@
 
 
 
-## 打卡
+# 打卡
 
 |日期|做了什么|
 |--|--|
