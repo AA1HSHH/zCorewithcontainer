@@ -61,7 +61,7 @@ func child() {
 		panic(fmt.Sprintf("sethostname: %v\n", err))
 	}
 	// //Change the root directory
-    err = syscall.Chdir("../alpine")
+    err = syscall.Chdir("/path/to/alpine")
 	err = syscall.Chroot("/")
     if err != nil {
 		panic(fmt.Sprintf("chroot: %v\n", err))
@@ -82,7 +82,7 @@ func child() {
     err = cmd.Run()
     if err != nil {
       syscall.Unmount("proc",0)
-      panic(fmt.Sprintf("running: %v\n", err))
+      //panic(fmt.Sprintf("running: %v\n", err))
     }
     
 }

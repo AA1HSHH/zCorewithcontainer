@@ -8,7 +8,4 @@ cd ..
 
 ```
 
-go version
-
-export PATH=$PATH:/usr/local/go/bin
 
