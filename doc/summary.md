@@ -20,7 +20,7 @@
 
 Ubuntu上Go语言初步实现了文件隔离，进程隔离
 
-[代码](../trydocker/)
+[代码](https://github.com/AA1HSHH/zCorewithcontainer/tree/main/trydocker)
 
 ## 体会
 
@@ -39,3 +39,4 @@ Ubuntu上Go语言初步实现了文件隔离，进程隔离
 Linux 内核   namespace  cgroup
 
 Zircon 内核   进程隔离jobs   
+
