@@ -8,7 +8,8 @@ Go/Rust已经可以在Ubuntu上运行，可实现文件&&进程隔离
 TODO:
 - [x] Go移植到Rust
 - [ ] 文档&&总结
-- [ ] 更新图片
+- [x] 更新图片
+- [ ] 网络隔离
 
 # 规划
 ## 路线
@@ -40,4 +41,5 @@ TODO:
 |0820|运行了Ubuntu上的简易容器，隔离了进程，没隔离文件|
 |0823|修BUG，尝试移植|
 |0901|RUST移植基本完成，已经隔离进程&&文件 |
+|0902|基于[系列文章](https://windsock.io/net-namespace/)及其[代码](https://github.com/nbrownuk/Namespaces)现在打算进一步支持网络隔离|
 

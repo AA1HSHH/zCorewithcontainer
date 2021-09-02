@@ -20,6 +20,8 @@
 
 Ubuntu上Go语言初步实现了文件隔离，进程隔离
 
+现在代码已经移植到Rust之上
+
 [代码](https://github.com/AA1HSHH/zCorewithcontainer/tree/main/trydocker)
 
 ## 体会
@@ -30,9 +32,9 @@ Ubuntu上Go语言初步实现了文件隔离，进程隔离
 
 ## 想法
 
-1 Go到Rust
+- [x] Go到Rust
 
-2 Ubuntu到zCore（linux ，zircon）
+- [ ] Ubuntu到zCore（linux ，zircon）
 
 
 
