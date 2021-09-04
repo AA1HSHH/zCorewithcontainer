@@ -16,13 +16,15 @@
 
 容器与宿主机共享相同的操作系统
 
+## 设计
+![workflow](summary.assets/workflow.png)
+
 ## 结果
 
 Ubuntu上Go语言初步实现了文件隔离，进程隔离
 
-现在代码已经移植到Rust之上
+现在[代码](../trydocker/)已经移植到Rust之上
 
-[代码](https://github.com/AA1HSHH/zCorewithcontainer/tree/main/trydocker)
 
 ## 体会
 
