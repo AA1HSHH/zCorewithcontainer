@@ -1,5 +1,8 @@
 # trydocker
 Go/Rust 的linux容器尝试
+
+设计请移步[至](../doc/summary.md)
+
 # 运行需要镜像
 ```shell
 mkdir alpine
