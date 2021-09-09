@@ -7,4 +7,5 @@ edition = "2018"
 
 [dependencies]
 nix = "0.22.1"
-libc = "0.2"
+rtnetlink = "0.8.0"
+tokio = { version = "1.0.1", features = ["macros", "rt", "rt-multi-thread"] }
